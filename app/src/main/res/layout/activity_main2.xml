@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="#069370">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="6dp"
+              android:layout_marginRight="20dp"
+              android:text="Home"
+              android:onClick="home"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:text="Music Run Club"
+            android:textSize="30sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:text="MS Dhoni - Untold Story"
+            android:textSize="26sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image1"
+                style="@style/songImage"
+                android:src="@drawable/jab_tak" />
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/songName"
+                android:layout_toRightOf="@+id/image1"
+                android:text="Jab Tak" />
+
+
+            <ImageView
+                android:id="@+id/play1"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image1"
+                android:layout_toRightOf="@+id/image1"
+                android:src="@drawable/play"
+                android:onClick="play1"/>
+
+            <ImageView
+                android:id="@+id/pause1"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image1"
+                android:layout_toLeftOf="@+id/stop1"
+                android:layout_toRightOf="@+id/play1"
+                android:src="@drawable/pause"
+                android:onClick="pause"/>
+
+            <ImageView
+                android:id="@+id/stop1"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image1"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stop"
+                android:onClick="stop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image2"
+                style="@style/songImage"
+                android:src="@drawable/kaun_tujhe" />
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/songName"
+                android:layout_toRightOf="@+id/image2"
+                android:text="Kaun Tujhe" />
+
+
+            <ImageView
+                android:id="@+id/play2"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image2"
+                android:layout_toRightOf="@+id/image2"
+                android:src="@drawable/play"
+                android:onClick="play2"/>
+
+            <ImageView
+                android:id="@+id/pause2"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image2"
+                android:layout_toLeftOf="@+id/stop2"
+                android:layout_toRightOf="@+id/play2"
+                android:src="@drawable/pause"
+                android:onClick="pause"/>
+
+            <ImageView
+                android:id="@+id/stop2"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image2"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stop"
+                android:onClick="stop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image3"
+                style="@style/songImage"
+                android:src="@drawable/besabr" />
+
+            <TextView
+                android:id="@+id/text3"
+                style="@style/songName"
+                android:layout_toRightOf="@+id/image3"
+                android:text="Besabriyaan" />
+
+
+            <ImageView
+                android:id="@+id/play3"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image3"
+                android:layout_toRightOf="@+id/image3"
+                android:src="@drawable/play"
+                android:onClick="play3"/>
+
+            <ImageView
+                android:id="@+id/pause3"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image3"
+                android:layout_toLeftOf="@+id/stop3"
+                android:layout_toRightOf="@+id/play3"
+                android:src="@drawable/pause"
+                android:onClick="pause"/>
+
+            <ImageView
+                android:id="@+id/stop3"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image3"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stop"
+                android:onClick="stop"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/image4"
+                style="@style/songImage"
+                android:src="@drawable/har_gully_mein_dhoni_hai" />
+
+            <TextView
+                android:id="@+id/text4"
+                style="@style/songName"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/image4"
+                android:text="Har Gully Mein Dhoni hai" />
+
+
+            <ImageView
+                android:id="@+id/play4"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image4"
+                android:layout_toRightOf="@+id/image4"
+                android:src="@drawable/play"
+                android:onClick="play4"/>
+
+            <ImageView
+                android:id="@+id/pause4"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image4"
+                android:layout_toLeftOf="@+id/stop4"
+                android:layout_toRightOf="@+id/play4"
+                android:src="@drawable/pause"
+                android:onClick="pause"/>
+
+            <ImageView
+                android:id="@+id/stop4"
+                style="@style/buttons"
+                android:layout_alignBottom="@+id/image4"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stop"
+                android:onClick="stop"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
